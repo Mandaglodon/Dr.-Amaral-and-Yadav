@@ -1,0 +1,173 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+%\usepackage{https://web..com/6ea9f713-5482-52e3-982a-73af7ec45a40}
+\title{Einstein’s field equation of a quantum particle using the wave function}
+\author{AMAN YADAV}
+\date{November 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+General relativity establishes a correspondence between the geometric aspects of spacetime and the distribution of matter and energy, as encapsulated by Einstein's local field equations,
+\begin{equation}
+G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu},
+\end{equation}
+where $G_{\mu\nu}$ is the Einstein tensor representing the curvature of spacetime, $g_{\mu\nu}$ is the metric tensor describing the geometry of spacetime, $T_{\mu\nu}$ is the stress–energy tensor reflecting the distribution and flow of energy and momentum in spacetime, $\Lambda$ is the cosmological constant, $G$ is the Newtonian constant of gravitation, and $c$ is the speed of light in vacuum. On the other hand, quantum mechanics introduces the principle of wave-particle duality, which manifests both wave-like and particle-like properties in matter and energy, as illustrated by the De Broglie relations and the Schr{\"o}dinger equation-Equations \ref{eq1Schrodinger}, \ref{eq2KEV}. In this sense, both equations of general relativity and quantum mechanics have matter on one side and something else on the other side of an equality. This ``something else'' being geometry-like or wave-like. In this discourse, we explore a simplified model within the context of cosmology, where the wave aspect of quantum mechanics is proportionally linked to the geometry of spacetime. This approach specifically considers the cosmological scale factor that characterizes the rescaling of spacetime within a homogeneous and isotropic universe described by a perfect fluid.
+
+
+The Friedmann equations, which are central to our understanding of the universe's expansion, are primarily derived from general relativity and frameworks that integrates classical mechanics and thermodynamics. This exploration contemplates whether analogous dynamics might emerge from applying space rescaling concepts to a local particle quantum state. The conventional understanding posits that the universe expands on large scales, particularly in the vast regions between galaxies, while gravitational forces within galaxies maintain their structural cohesion. However, this view does not necessarily preclude the possibility of spacetime expansion within matter-dominated regions, which may be challenging to observe directly.
+
+Given that matter fundamentally are quantum phenomena and acknowledging the absence of a unified quantum gravity theory, it is plausible to infer that the cosmological expansion observed at macroscopic scales originates from the spacetime fabric at the microscopic level, possibly extending down to the Planck scale. While general relativity provides a framework for understanding how matter influences spacetime curvature, the ability of classical gravity to keep matter bound at macroscopic scales, even amidst the potential expansion of the underlying spacetime, raises intriguing questions about the emergence of matter from fundamental quantum dynamics.
+
+To explore these ideas further, our focus shifts to examining the behavior of an existing quantum state within the context of universal expansion. By investigating how quantum states respond to changes in the scale of spacetime, we may gain new insights into the interplay between quantum mechanics and cosmology, potentially shedding light on the origin of the observed cosmological expansion and its relationship to the microscopic structure of spacetime.
+
+Consider the time-independent Schr{\"o}dinger Equation for the wave function (energy eigenfunction) $\Psi(x)$, with $x$ representing $(x,y,z)$, of a particle with mass $m$ under potential $V(x)$. The equation is given by:
+\begin{equation}
+\nabla^2 \Psi = -\frac{2m(E - V)}{\hbar^2} \Psi \quad \label{eq1Schrodinger} \\ 
+\rightarrow
+\frac{\nabla^2 \Psi}{\Psi} = -\frac{2m\eta}{\hbar^2}(\frac{E}{\eta} - \frac{V}{\eta})  
+\end{equation}
+$v^2\frac{m\eta}{2\hbar^2}$ where $v$ is the recessional velocity. where $\frac{m\eta}{\hbar^2}$ represents $\frac{G}{c^4}$, when we input planck's parameter (like plancks volume and planck's mass.)\\ \\
+with $E$, the energy eigenvalue for the stationary state $\Psi(x)=\Psi_{E}(x)$.
+
+For a particle under a potential $V(x)$, the time-independent Schr{\"o}dinger equation can yield different forms of solutions depending on the relationship between the energy $E$ of the particle and the potential $V$. We consider the particle in a box situation with a finite potential inside and infinite outside. The box may be taken to be spherical with a given radius. Specifically, inside the box, for a constant potential, being zero, or when $E > V$, the solutions are of the form of plane waves. Conversely, for $E < V$, the solutions differ significantly. When these solutions are substituted back into the time-independent Schr{\"o}dinger equation, we obtain:
+\begin{equation}
+k^2 = \frac{2m(E-V)}{\hbar^2}, \label{eq2KEV}
+\end{equation}
+where $k$ is the wavenumber. 
+
+
+This is a stationary state analysis. We now consider a scenario where spacetime itself begins to change, specifically, rescaling with a factor $a(t)$. Consequently, the volume of a given region $\eta(t_1)$ at time $t_1$ will relate to the volume $\eta(t_2)$ at time $t_2$ by
+\begin{equation}
+\eta(t_2) = \frac{a(t_2)^3}{a(t_1)^3}\eta(t_1), \label{eq:VolumeScale}
+\end{equation}
+ensuring that the ratio $\eta_0 = \frac{\eta(t)}{a(t)^3}$ remains constant. Thus, we can express $\eta(t)$ as $\eta_0 a(t)^3$.
+
+Introducing time is essential to account for the rescaling effects. The problem now should be addressed by the time-dependent Schr{\"o}dinger equation, as the potential depends on the dynamic radius or volume. This problem has been studied using various approaches \cite{Cooney} and references therein. In this context, the energies become dynamic, and a notion of energy density in quantum mechanics arises naturally \cite{francisco}. Crucially, the wavenumber, wavelength, and quantum amplitudes become functions of the dynamical size of the box, and we posit that they are subject to the Hubble law explicitly. By connecting the geometry with the wave aspect of the particle-wave duality mentioned earlier, we aim to derive Friedmann-like equations.
+
+Revisiting equation (\ref{eq2KEV}), we modify it by dividing both sides by the dynamical volume $\eta$, which confines the particle in space. Equation (\ref{eq2KEV}) encapsulates the wave-particle duality, highlighting that the matter wavelength, $\lambda = \frac{2 \pi}{k}$, is a fundamental quantum mechanical attribute that determines the probability density of locating the particle within the configuration space. Notably, a particle's wavelength, inversely related to its momentum (and thus energy), serves as a bridge to cosmological dynamics. By invoking the Hubble law, expressed as $v = H \lambda$, where $H = \frac{\dot{a}}{a}$ is the time-dependent Hubble parameter, we correlate the particle's wavelength to the cosmic scale factor $a(t)$ while keeping the energy constant. This association suggests an emergent classical kinetic energy tied to the velocity $v$ associated to the expansion. Consequently, equation (\ref{eq2KEV}) is transformed into
+
+\begin{equation}
+H^2 = \left( \frac{\dot{a}}{a} \right)^2 = \frac{K\eta}{\pi^2 \hbar^2} \rho, \label{eq:Friedmann1fromQuantum}
+\end{equation}
+
+where $K=\frac{1}{2}mv^{2}$ is the kinetic energy, $\rho=E/\eta$ represents the energy density, and setting $V=0$. Note that we are simplifying the concept of energy density here. The particle energy is time-dependent, and any particle would be subject to the same expansion that occurs everywhere. This brings a notion of a particle horizon and an energy density within each particle volume expansion. This equation bears a striking resemblance to the first Friedmann equation, suggesting that the dynamics of a quantum particle in a box with a time-dependent boundary may provide insights into the expansion of the universe. By establishing a connection between the particle's wave nature and the cosmic scale factor.
+To align with the usual first Friedmann equation's structure, the term $\frac{K\eta}{\pi^2 \hbar^2}$ must remain constant
+\begin{equation}
+K\eta=\frac{8\pi^{3}\hbar^{2}G}{3c^{2}} \label{kineticvolumeconstar}
+\end{equation}
+with kinetic energy compensating for the changing volume and establishing a direct quantum mechanical analogy to cosmic expansion dynamics.
+\begin{equation}
+H^2 = \left( \frac{\dot{a}}{a} \right)^2 = \frac{8\pi G}{3c^{2}} \rho, \label{eq:Friedmann1fromQuantum2}
+\end{equation}
+
+
+The analysis of a relativistic particle in a box with moving walls is similar to, but more complex than, the non-relativistic case. This complexity arises whether we consider a fermionic spin-1/2 particle described by the Dirac equation or a spin-0 particle described by the Klein-Gordon equation \cite{Koehn:2012red}. To gain insights into the relativistic case, we can apply the same analysis using the relativistic dispersion relation derived from the energy-momentum relation:
+\begin{equation}
+(\hbar kc)^2  = E^2 - (mc^2)^2. \label{eqRelDispersion}
+\end{equation}
+
+To bridge the quantum and classical realms, we need to determine the energy density. This involves multiplying and dividing the equation by the dynamical volume $\eta$. In the non-relativistic case, we notice the appearance of a kinetic energy term linked to the expansion. This observation suggests that the dynamical energy $E$, for a unique particle, can transform into different forms during the expansion process. Specifically, in the case of photons, where, $mc^2=0$, we consider the energy density related to the photon's energy, which evolves with the expansion. Motivated by this observation, we apply the energy-balancing constraint:
+\begin{equation}
+\ensuremath{C=E-K-V=0},\label{eq:energybalanceconstraint}
+\end{equation}
+where $E$ is the total energy, $K$ is the kinetic energy, and $V$ is the potential energy, all associated with the dynamical expansion process. This constraint allows us to examine the system's properties across different scales, connecting the microscopic energy $E$ to macroscopic scales potentially represented by $K$ and $V$. Here, $K$ and $V$ can be viewed as effective parameters encapsulating average or microscopic system properties as the system expands.
+
+
+The energy-balancing constraint in Equation \ref{eq:energybalanceconstraint} provides a framework for understanding how the total energy $E$ is partitioned into kinetic and potential components during the expansion process. By considering the conservation of energy and the interplay between these different forms of energy, we can gain insights into the dynamics of the system across various scales.
+In the context of the relativistic particle in a box with moving walls, the application of this constraint may lead to the emergence of terms analogous to the energy density $\rho$, pressure $p$, and possibly the cosmological constant $\Lambda$ when deriving the relativistic Friedmann-like equation. By incorporating the energy-balancing constraint into the analysis, we can explore how the quantum mechanical properties of the system, such as the wave nature of the particle and the dynamical evolution of the wavefunction, relate to the classical cosmological parameters that describe the expansion of the universe.
+
+Isolating $K$ while keeping $E$ and $V$ independent, we obtain 
+\begin{equation}
+E^{2}=K(E+V+V^{2}/K).\label{E2expanded}
+\end{equation}
+
+Since the wave number is inversely proportional to the wavelength, we can apply the Hubble law as done before.  Then, Equation \ref{eqRelDispersion} can be rewritten as:
+\begin{equation}
+H^{2}=\beta^{2}\frac{K\eta}{\pi^{2}\hbar^{2}}(\rho+p)+\frac{\beta^{2}}{\pi^{2}\hbar^{2}}V^{2}-\frac{\beta^{2}}{\pi^{2}\hbar^{2}}(mc^{2})^{2}\label{eqrelativisticH}
+\end{equation}
+with $\beta=v/c$, $\rho = E/\eta$ is the energy density, and $p = V/\eta$ is the pressure. Equation \ref{eqrelativisticH} is analog of the Friedmann equation for relativistic matter, derived from the quantum mechanical description of a particle in a box with moving walls. The first term on the right-hand side resembles the classical Friedmann equation. The second term, proportional to $V^2$, may be interpreted as related to the cosmological constant $\Lambda$ as it does not explicitly depend on $a$.
+
+
+To obtain the usual contribution to radiation, we set $mc^2 = 0$. Typically, radiation energy density enters the Friedmann equation as proportional to $1/a^4$, while non-relativistic matter is proportional to $1/a^3$. Here, we derive a notion of energy density for individual massive particles and photons subject to dynamical boundary conditions related to the expansion of space, and they share a similar form. The $1/a^4$ factor for radiation arises from considering the number density of photons, which scales like matter, times the photon energy, which scales with $1/a$ due to redshift as the photon wavelength expands. The redshift here is accounted for through the Hubble law applied to the wavelength.
+
+The essential difference between non-relativistic matter and radiation is that in one case $H^2 \propto E$, and in the other, $H^2 \propto E^2$. To achieve the same notion of energy density, our approach introduces a new term for radiation. Essentially, we achieve the same result of having different phases: one in the short wavelength regime and the other at large wavelengths at later times.
+
+Importantly, we note that different dispersion relations will lead to different dynamics for the scale parameter, and various relations may be considered. This is in line with the usual approach where different cosmological epochs have different evolutions due to varying energy densities. To motivate our quasicrystalline model presented in the next section, let us consider quantum excitations in lattice and quasicrystalline condensed matter systems. These systems are known for their phonon quasiparticles, which emerge due to the breaking of translational symmetry. Quasicrystals, however, also host phasons—a less understood type of quasiparticle. Phasons are particularly interesting because they are linked to a reduction in dimensions; this occurs as quasicrystals are formed from the projection of higher-dimensional lattices onto lower-dimensional spaces.
+
+The dispersion relation for phonons in lattices is similar to the relativistic one in the regime of large wavelengths, but with the speed of light replaced by the speed of sound. In this regime, the phonon dispersion relation is nearly linear, and the crystal can be treated as a continuous elastic medium, with phonons behaving like classical sound waves. However, in the regime of short wavelengths, the dispersion relation becomes nonlinear, and the microscopic details of the lattice become important. In this case, phonons are sensitive to the discrete nature of the lattice, and the nonlinear dispersion relation can lead to phonon dispersion, where phonon packets with different wavelengths propagate at different speeds, causing distortion of the waveform. The transition between these two regimes occurs when the phonon wavelength becomes comparable to the interatomic spacing, with the specific wavevector or wavelength at which this transition happens depending on the details of the crystal structure and the interatomic forces.
+
+In quasicrystals, the situation is more complicated because they do not have a simple primitive cell like periodic crystals but rather a complex, self-similar structure. As a result, the phonon dispersion relations in quasicrystals can exhibit intricate, fractal-like patterns. Despite these differences, the linear dispersion relation for phonons in quasicrystals shares similarities with the phonon branches in periodic crystals, particularly at low frequencies and long wavelengths. We will discuss more about phonons in the next section when discussing the quasicrystalline model, where they arise as candidates to contribute in both radiation (massless phonons) and dark matter regimes (massive phonons).
+
+Phasons in quasicrystals also share similarities with those found in relativistic physics. However, a key difference is the presence of a dispersive imaginary term in the phason dispersion relation, which becomes prominent at very large wavelengths \cite{Baggioli:2020haa,Lubensky}. This imaginary term is related to the diffusive behavior of phasons and is absent in the phonon dispersion relation.
+
+The presence of both phonons and phasons in quasicrystals, along with their distinct dispersion relations, may have important implications for the dynamics of the scale parameter in the quasicrystalline model of the universe. The interplay between these two types of quasiparticles, their different regimes of behavior, and their potential connection to the emergence of cosmological equations could provide new insights into the relationship between quantum mechanics and cosmology.
+
+Using $\omega = E / \hbar$, for phasons, we have 
+\begin{equation}
+v^{2}k^{2}=\frac{E^{2}}{\hbar^{2}}+i\gamma\frac{E}{\hbar}\label{eq:phasonrelation}
+\end{equation}
+where $\gamma$ is the phason friction coefficient. The phason is a
+goldstone mode that arise under a symmetry breaking
+mechanism \cite{Baggioli:2020haa}. In the case of lattices, the energy states are defined in a Voronoi cell. For quasicrystals, there are more fundamental cells or tiles, but with one fixed, we can consider the expansion of that cell and, as before, apply the Hubble law to the wavelength. In addition, we can use Equation \ref{E2expanded} and multiply by the volume on both sides of Equation \ref{eq:phasonrelation}, yielding
+\begin{equation}
+H^{2}=\frac{K\eta}{4\pi^{2}\hbar^{2}}(\rho+p)+\frac{1}{4\pi^{2}\hbar^{2}}V^{2}+i\gamma\frac{E}{4\pi^{2}\hbar} \label{phasonH2}
+\end{equation}
+where we considered the velocity associated to phasons equal to the one of the expansion. To deal with the imaginary part, this equation can be interpreted from the energy relation where in the regime of short wavelength the phason propagation dominates with $v^{2}k^{2}=\frac{E^{2}}{\hbar^{2}}$ leading to a Friedmann like equation similar to Equation \ref{eqrelativisticH}. In the regime of large wavelength we have $v^{2}k^{2}=i\gamma\frac{E}{\hbar}$ which leads to diffusion and decoupling from expansion contribution. We will come back to these two regimes in context of the quasicrystalline model of the universe in next section.
+
+
+
+To finish this analysis, we can add the acceleration equation from usual thermodynamics considerations when one derives the Friedmann equations from Newtonian physics. For this, one adds the continuity equation
+
+\begin{equation}
+\dot{\rho} + 3 \frac{\dot{a}}{a} (\rho + p) = 0.
+\end{equation}
+
+Taking the derivative in Equations (\ref{eq:Friedmann1fromQuantum}), (\ref{eqrelativisticH}), and (\ref{phasonH2}), with $V$ constant and $\beta=1$, we get for Equations (\ref{eq:Friedmann1fromQuantum}) and (\ref{eqrelativisticH}):
+
+\begin{equation}
+2H \dot{H} = \alpha \dot{\rho},
+\end{equation}
+
+with $\alpha = K\eta/\pi^2 \hbar^2$. For Equation (\ref{phasonH2}), we have
+
+\begin{equation}
+2H \dot{H} = \alpha \dot{\rho} + i\gamma\frac{\dot{E}}{4\pi^{2}\hbar}.
+\end{equation}
+
+Now, we can derive the acceleration term in both situations. For Equation (\ref{eq:Friedmann1fromQuantum}), substituting the continuity equation into the derivative of the Friedmann-like equation yields (with the original potential equal to zero)
+\begin{equation}
+\frac{\ddot{a}}{a} = -\frac{\alpha}{2} (\rho + 3p).
+\end{equation}
+This equation describes the acceleration of the scale factor in terms of the energy density and pressure, analogous to the second Friedmann equation in general relativity.
+
+For Equations (\ref{eqrelativisticH}), with $m=0$
+\begin{equation}
+\frac{\ddot{a}}{a}=-\frac{\alpha}{2}(\rho+p)+\Lambda \label{freedmanrela1}
+\end{equation}
+with $\Lambda=\frac{1}{\pi^{2}\hbar^{2}}V^{2}$.
+
+For Equation (\ref{phasonH2}), which includes the phason contribution, the acceleration equation becomes
+\begin{equation}
+\frac{\ddot{a}}{a}=-\frac{\alpha}{4}(\rho+p)+\frac{1}{4}\Lambda+\frac{i\gamma}{4\pi^{2}\hbar}(E+\frac{\dot{E}}{2H}) \label{freedmanrela2}
+\end{equation}
+The additional term involving the phason friction coefficient $\gamma$ and the time derivative of the energy $\dot{E}$ modifies the acceleration of the scale factor. The imaginary nature of this term suggests that it may not significantly affect the expansion of the universe in the large wavelength regime.
+
+These acceleration equations provide insights into the dynamics of the scale factor in the presence of matter, radiation, and phason contributions. They demonstrate how the quantum mechanical description of particles in a box with moving walls can give rise to cosmological equations that resemble the Friedmann equations of general relativity. The inclusion of the phason term in Equation (\ref{phasonH2}) highlights the potential role of quasicrystalline structures and their associated quasiparticles in the evolution of the universe.
+
+
+Our analysis commenced with the time-independent Schr{\"o}dinger equation for a particle confined within a potential well. We then introduced several crucial modifications to the system: a general energy-balancing constraint (Equation \ref{eq:energybalanceconstraint}), a time-dependent boundary condition representing moving walls, and a dynamically evolving volume. These additions were aimed at establishing a connection between the quantum and classical regimes across different scales. By applying the Hubble law to the wavelength of the particle and relating it to the cosmic scale factor, we derived a Friedmann-like equation (Equation \ref{eq:Friedmann1fromQuantum}) from the quantum mechanical description of the system.
+
+In the relativistic extension of our analysis, we employed the Klein-Gordon equation and the relativistic energy-momentum relation (Equation \ref{eqRelDispersion}). This led to the emergence of a new term in the resulting Friedmann-like equation (Equation \ref{eqrelativisticH}), which bears a resemblance to the cosmological constant term in the standard Friedmann equations of general relativity.
+
+Furthermore, we explored the implications of different dispersion relations, particularly those associated with phonons and phasons in quasicrystalline structures. The presence of an imaginary term in the phason dispersion relation (Equation \ref{eq:phasonrelation}) led to a modified Friedmann-like equation (Equation \ref{phasonH2}) that includes a dissipative contribution arising from the phason friction coefficient. This can be interpreted as having different regimes contributions. 
+
+
+Bridging quantum mechanics and cosmology is complex and challenging. Our simplified model offers insights but may not capture all intricacies of this transition. A comprehensive framework incorporating quantum gravity, quantum field theory, and cosmological perturbation theory might be needed to fully understand the interplay between quantum phenomena and the universe's large-scale structure.
+
+Nevertheless, our analysis demonstrates the potential for deriving cosmological equations from the quantum mechanical description of a particle in a box with time-dependent boundary conditions at intermediate scales. The derivation of Friedmann-like equations indicates a profound connection between the microscopic quantum world and the macroscopic evolution of the universe. This suggests that the local expansion, influenced by matter distributions, is analogous to the wave-like properties of quantum particles. The inclusion of phonon and phason contributions from quasicrystalline structures further emphasizes the potential role of condensed matter physics in understanding the nature of dark energy, dark matter, and the expansion of the universe.
+
+\end{document}
+
